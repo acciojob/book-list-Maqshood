@@ -1,4 +1,4 @@
-  document.getElementById('submit').addEventListener('click', function (e) {
+document.getElementById('submit').addEventListener('click', function (e) {
       e.preventDefault();
 
       const title = document.getElementById('title').value.trim();
@@ -17,12 +17,11 @@
         <td>${title}</td>
         <td>${author}</td>
         <td>${isbn}</td>
-        <td><button class="delete">X</button></td>
+        <td><button class="delete btn btn-danger btn-sm">X</button></td>
       `;
 
       list.appendChild(row);
 
-      // Clear fields
       document.getElementById('title').value = '';
       document.getElementById('author').value = '';
       document.getElementById('isbn').value = '';
@@ -30,4 +29,6 @@
 
     document.getElementById('book-list').addEventListener('click', function (e) {
       if (e.target.classList.contains('delete')) {
-        e.target.parentElement.parentElement.remove();
+        e.target.closest('tr').remove();
+      }
+    });
