@@ -1,1 +1,59 @@
 /*  your css code here. If applicable */
+ body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+ h1 {
+      font-size: 36px;
+    }
+
+    h1 span {
+      color: dodgerblue;
+    }
+
+    .form-group {
+      margin: 20px auto;
+      max-width: 400px;
+    }
+
+    .form-group input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    #submit {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: dodgerblue;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .table {
+      margin: 20px auto;
+      width: 80%;
+      border-collapse: collapse;
+    }
+
+    .table th,
+    .table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .table th {
+      background-color: #f4f4f4;
+    }
+
+    .delete {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
