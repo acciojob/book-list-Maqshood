@@ -8,15 +8,17 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<h1>MyBookList</h1>
-	<div class="form-group">
-		<input type="text" id="title" placeholder="Title">
-		<input type="author" id="author" placeholder="Author">
-		<input type="isbn" id="isbn" placeholder="Isbn">
-		<button id="submit">Add Book</button>
-	</div>
-	<table class="table ">
-	 <thead>
+<h1>My<span>Book</span>List</h1>
+
+  <div class="form-group">
+    <input type="text" id="title" placeholder="Title">
+    <input type="text" id="author" placeholder="Author">
+    <input type="text" id="isbn" placeholder="ISBN#">
+    <button id="submit">Add Book</button>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
       <tr>
         <th>Title</th>
         <th>Author</th>
@@ -25,8 +27,9 @@
       </tr>
     </thead>
     <tbody id="book-list">
+      <!-- Book entries go here -->
     </tbody>
-	</table>
+  </table>
     <script type="text/javascript" src="./script.js">
 </script>
 
